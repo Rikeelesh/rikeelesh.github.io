@@ -36,9 +36,19 @@ header {
   color: #f5c842;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 nav a {
-  margin: 0 0.75rem;
   color: #ccc;
+  padding: 0.5rem;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 nav a:hover {
