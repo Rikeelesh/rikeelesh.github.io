@@ -17,14 +17,16 @@ header {
   background: #12151c;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 70px;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  z-index: 999;
   box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  overflow-x: auto; /* key fix */
 }
 
 .logo {
@@ -44,11 +46,18 @@ nav {
   align-items: center;
 }
 
+nav {
+  display: flex;
+  flex-shrink: 0;
+  gap: 1rem;
+  white-space: nowrap;
+}
+
 nav a {
   color: #ccc;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 1rem;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 nav a:hover {
