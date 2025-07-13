@@ -2,57 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RIk | Salesforce Consultant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RIk | Tech Consultant</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="dark">
   <header>
     <div class="logo">R<span class="accent">Ik</span></div>
     <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
+      <a href="#services">What I Do</a>
       <a href="#contact">Contact</a>
       <button id="theme-toggle">☀️</button>
     </nav>
   </header>
 
   <main>
-    <section id="hero">
-      <h1>Hello, I'm <span class="accent">Rikeelesh</span></h1>
-      <p>Tech Consultant & Developer</p> 
-      <p>I help businesses streamline operations with Salesforce, Flutter & Systeme.io.</p>
+    <!-- Home Section -->
+    <section id="home" class="full-section">
+      <div class="content">
+        <h1>Hi, I’m <span class="accent">Rik</span> 👋</h1>
+        <h2>Tech Consultant & Developer</h2>
+        <p>I help businesses streamline operations with <strong>Salesforce</strong>, <strong>Flutter</strong> & <strong>Systeme.io</strong>.</p>
+        <p class="tagline">Quality solutions. Collaborative builds. Documented delivery.</p>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a full-time Salesforce Consultant from Mauritius with 6+ years experience in cloud platforms. I also freelance in Flutter, Systeme.io, and Odoo implementations.</p>
+    <!-- About Section -->
+    <section id="about" class="full-section">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>I'm a Salesforce Consultant with 6+ years of experience. Along the way, I picked up Flutter, Systeme.io, and Odoo — turning side skills into real impact for clients.</p>
+        <p>Whether you need help automating a CRM, building a mobile app, or launching a funnel, I offer end-to-end tech solutions with personal care.</p>
+        <p>When I’m not building systems, I’m walking in nature 🌿.</p>
+      </div>
     </section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>⚙️ Salesforce Configuration & Automation</li>
-        <li>📱 Flutter Mobile App Development</li>
-        <li>🚀 Systeme.io Funnels & Workflow Customization</li>
-        <li>📊 Odoo ERP Implementation</li>
-      </ul>
+    <!-- Services Section -->
+    <section id="services" class="full-section">
+      <div class="content">
+        <h2>What I Do</h2>
+        <div class="service">
+          <h3>🛠 Salesforce Admin & Configuration</h3>
+          <ul>
+            <li>Custom objects, flows, permission sets</li>
+            <li>Reports, automation & user setup</li>
+            <li>Clean documentation for every org</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>📱 Flutter App Development</h3>
+          <ul>
+            <li>Cross-platform mobile apps (iOS & Android)</li>
+            <li>Firebase & API integration</li>
+            <li>Great for MVPs, startups & tools</li>
+          </ul>
+        </div>
+        <div class="service">
+          <h3>🌐 Systeme.io + Odoo</h3>
+          <ul>
+            <li>Funnels, websites & automations</li>
+            <li>Email flows & payment integrations</li>
+            <li>Odoo ERP configuration</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Portfolio</h2>
-      <p>Projects coming soon...</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/yourformid" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <!-- Contact Section -->
+    <section id="contact" class="full-section">
+      <div class="content">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   </main>
 
